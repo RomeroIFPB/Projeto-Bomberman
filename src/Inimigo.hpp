@@ -7,6 +7,6 @@ class Inimigo : public Personagem
     Inimigo(std::string nome, int posL, int posC, const SpriteBase &s) : Personagem(nome,posL,posC,s) {};
     ~Inimigo(){};
 
-    void decisao() override;
+    //void decisao() override;
     private:
 };

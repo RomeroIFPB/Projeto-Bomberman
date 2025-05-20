@@ -4,7 +4,7 @@
 class Fogo : public ObjetoDeJogo 
 {
     public:
-    Fogo(std::string nome, int posL, int posC, const SpriteBase &s) : ObjetoDeJogo(nome,posL,posC,s) {};
+    Fogo(std::string nome, int posL, int posC, const SpriteBase &s) : ObjetoDeJogo(nome,s,posL,posC) {};
     ~Fogo(){};
 
     void apagarFogo();

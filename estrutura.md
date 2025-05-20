@@ -41,7 +41,7 @@ BombaHandler
 
     métodos:
         diminuirPavios()
-        PosicionarBomba
+        PosicionarBomba()
         ChecarExplosoes - Para cada explosao encontrada chama o bomba.explodir() e retira da lista de bombas. O desativarobj faz isso automaticamente?
 
 ExplosaoHandler
@@ -91,3 +91,12 @@ Loop:
         para cada inimigo
             inimigo.morto()
     Aplicar mudanças e renderizar
+
+void Bomberman::decisao(char entrada)
+{
+    return;
+}
+void Inimigo::decisao()
+{
+    
+}

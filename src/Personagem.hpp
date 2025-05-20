@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../ASCII_Engine/ObjetoDeJogo.hpp"
+#include "Bloco.hpp"
 #include "BombaHandler.hpp"
 class Personagem : public ObjetoDeJogo 
 {
@@ -15,9 +16,9 @@ class Personagem : public ObjetoDeJogo
 
     void morrer();
     void mover();
-    void soltarBomba(BombaHandler handler);
+    void soltarBomba(BombaHandler *handler);
 
-    virtual void decisao() = 0;
+    virtual void decisao(char entrada, std::vector<Bloco*> blocos, BombaHandler *handler) = 0;
     
     private:
 

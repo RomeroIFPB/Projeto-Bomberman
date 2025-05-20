@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Personagem.hpp"
+#include <vector>
 class Bomberman : public Personagem 
 {
     public:
@@ -9,7 +10,8 @@ class Bomberman : public Personagem
 
     void diminuirVida();
     void aumentarVida();
-    void decisao(char entrada) override;
+
+    void decisao(char entrada, std::vector<Bloco*> blocos, BombaHandler *handler) override;
 
     private:
     int vidas;
